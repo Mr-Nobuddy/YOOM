@@ -52,7 +52,7 @@ const MobileNav = () => {
                     <SheetClose>
                       <Link
                         href={links.route}
-                        key={links.label}
+                        key={links.route}
                         className={cn(
                           "flex gap-4 items-center p-4 rounded-lg w-full max-w-60",
                           { "bg-blue-1": isActive }

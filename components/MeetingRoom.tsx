@@ -70,7 +70,7 @@ const MeetingRoom = () => {
           </div>
           <DropdownMenuContent className="border-dark-1 bg-dark-1 text-white">
             {Layouts.map((item, idx) => (
-              <DropdownMenuItem className="flex justify-start items-center py-2 px-2 cursor-pointer hover:bg-[#4c535b] rounded-xl" onClick={() => setLayOut(item.toLowerCase() as CallLayoutType)}>
+              <DropdownMenuItem key={idx} className="flex justify-start items-center py-2 px-2 cursor-pointer hover:bg-[#4c535b] rounded-xl" onClick={() => setLayOut(item.toLowerCase() as CallLayoutType)}>
                 {item}
               </DropdownMenuItem>
             ))}
