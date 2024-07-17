@@ -49,10 +49,9 @@ const MobileNav = () => {
                 {sidebarLinks.map((links,idx) => {
                   const isActive = pathname === links.route;
                   return (
-                    <SheetClose>
+                    <SheetClose key={idx}>
                       <Link
                         href={links.route}
-                        key={idx}
                         className={cn(
                           "flex gap-4 items-center p-4 rounded-lg w-full max-w-60",
                           { "bg-blue-1": isActive }
